@@ -7,23 +7,38 @@ local SandhurstExploits = Instance.new("ScreenGui")
 local Title = Instance.new("Frame")
 local elements = Instance.new("Frame")
 local nameTXT = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local JJAmount = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local JJStart = Instance.new("ImageButton")
 local UICorner_2 = Instance.new("UICorner")
 local nameTXT_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
 local nameTXT_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local ST = Instance.new("ImageButton")
 local UICorner_3 = Instance.new("UICorner")
 local nameTXT_4 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local PT = Instance.new("ImageButton")
 local UICorner_4 = Instance.new("UICorner")
 local nameTXT_5 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local FORMALS = Instance.new("ImageButton")
 local UICorner_5 = Instance.new("UICorner")
 local nameTXT_6 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
 local underline = Instance.new("Frame")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local title = Instance.new("TextButton")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -57,6 +72,9 @@ nameTXT.Text = "AUTO JUMPING JACKS"
 nameTXT.TextColor3 = Color3.fromRGB(255, 255, 255)
 nameTXT.TextSize = 20.000
 
+UIAspectRatioConstraint.Parent = nameTXT
+UIAspectRatioConstraint.AspectRatio = 6.648
+
 JJAmount.Name = "JJAmount"
 JJAmount.Parent = elements
 JJAmount.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
@@ -73,6 +91,9 @@ JJAmount.TextSize = 14.000
 JJAmount.TextWrapped = true
 
 UICorner.Parent = JJAmount
+
+UIAspectRatioConstraint_2.Parent = JJAmount
+UIAspectRatioConstraint_2.AspectRatio = 5.189
 
 JJStart.Name = "JJStart"
 JJStart.Parent = elements
@@ -99,6 +120,12 @@ nameTXT_2.TextColor3 = Color3.fromRGB(53, 49, 49)
 nameTXT_2.TextSize = 20.000
 nameTXT_2.TextWrapped = true
 
+UIAspectRatioConstraint_3.Parent = nameTXT_2
+UIAspectRatioConstraint_3.AspectRatio = 5.470
+
+UIAspectRatioConstraint_4.Parent = JJStart
+UIAspectRatioConstraint_4.AspectRatio = 5.470
+
 nameTXT_3.Name = "nameTXT"
 nameTXT_3.Parent = elements
 nameTXT_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -110,6 +137,9 @@ nameTXT_3.Font = Enum.Font.GothamSemibold
 nameTXT_3.Text = "UNIFORM"
 nameTXT_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 nameTXT_3.TextSize = 20.000
+
+UIAspectRatioConstraint_5.Parent = nameTXT_3
+UIAspectRatioConstraint_5.AspectRatio = 6.648
 
 ST.Name = "ST"
 ST.Parent = elements
@@ -136,6 +166,12 @@ nameTXT_4.TextColor3 = Color3.fromRGB(53, 49, 49)
 nameTXT_4.TextSize = 20.000
 nameTXT_4.TextWrapped = true
 
+UIAspectRatioConstraint_6.Parent = nameTXT_4
+UIAspectRatioConstraint_6.AspectRatio = 4.268
+
+UIAspectRatioConstraint_7.Parent = ST
+UIAspectRatioConstraint_7.AspectRatio = 4.268
+
 PT.Name = "PT"
 PT.Parent = elements
 PT.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
@@ -160,6 +196,12 @@ nameTXT_5.Text = "PT"
 nameTXT_5.TextColor3 = Color3.fromRGB(53, 49, 49)
 nameTXT_5.TextSize = 20.000
 nameTXT_5.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = nameTXT_5
+UIAspectRatioConstraint_8.AspectRatio = 4.268
+
+UIAspectRatioConstraint_9.Parent = PT
+UIAspectRatioConstraint_9.AspectRatio = 4.268
 
 FORMALS.Name = "FORMALS"
 FORMALS.Parent = elements
@@ -186,12 +228,24 @@ nameTXT_6.TextColor3 = Color3.fromRGB(53, 49, 49)
 nameTXT_6.TextSize = 20.000
 nameTXT_6.TextWrapped = true
 
+UIAspectRatioConstraint_10.Parent = nameTXT_6
+UIAspectRatioConstraint_10.AspectRatio = 6.153
+
+UIAspectRatioConstraint_11.Parent = FORMALS
+UIAspectRatioConstraint_11.AspectRatio = 6.153
+
+UIAspectRatioConstraint_12.Parent = elements
+UIAspectRatioConstraint_12.AspectRatio = 0.777
+
 underline.Name = "underline"
 underline.Parent = Title
 underline.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
 underline.BorderSizePixel = 0
 underline.Position = UDim2.new(0, 0, 1, 0)
 underline.Size = UDim2.new(1, 0, 0.0799999982, 0)
+
+UIAspectRatioConstraint_13.Parent = underline
+UIAspectRatioConstraint_13.AspectRatio = 125.000
 
 title.Name = "title"
 title.Parent = Title
@@ -203,9 +257,15 @@ title.Text = "SANDHURST EXPLOITS"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 20.000
 
+UIAspectRatioConstraint_14.Parent = title
+UIAspectRatioConstraint_14.AspectRatio = 10.000
+
+UIAspectRatioConstraint_15.Parent = Title
+UIAspectRatioConstraint_15.AspectRatio = 10.000
+
 -- Scripts:
 
-local function CDNXKC_fake_script() -- Title.close 
+local function KPAACB_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -214,8 +274,8 @@ local function CDNXKC_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(CDNXKC_fake_script)()
-local function ULIU_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(KPAACB_fake_script)()
+local function XPEQK_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
@@ -416,8 +476,8 @@ local function ULIU_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(ULIU_fake_script)()
-local function OUCGI_fake_script() -- SandhurstExploits.Uniform 
+coroutine.wrap(XPEQK_fake_script)()
+local function EQKYQPO_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
@@ -450,4 +510,4 @@ local function OUCGI_fake_script() -- SandhurstExploits.Uniform
 		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
 	end)
 end
-coroutine.wrap(OUCGI_fake_script)()
+coroutine.wrap(EQKYQPO_fake_script)()
