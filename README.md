@@ -205,7 +205,7 @@ title.TextSize = 20.000
 
 -- Scripts:
 
-local function VQWYBSG_fake_script() -- Title.close 
+local function CDNXKC_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -214,8 +214,8 @@ local function VQWYBSG_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(VQWYBSG_fake_script)()
-local function KTDY_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(CDNXKC_fake_script)()
+local function ULIU_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
@@ -416,4 +416,38 @@ local function KTDY_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(KTDY_fake_script)()
+coroutine.wrap(ULIU_fake_script)()
+local function OUCGI_fake_script() -- SandhurstExploits.Uniform 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Physical"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+	
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.ST.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Standard"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+	
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.FORMALS.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Formal"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(OUCGI_fake_script)()
