@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local SandhurstExploitslol = Instance.new("ScreenGui")
+local SandhurstExploits = Instance.new("ScreenGui")
 local Title = Instance.new("Frame")
 local elements = Instance.new("Frame")
 local nameTXT = Instance.new("TextLabel")
@@ -27,12 +27,12 @@ local title = Instance.new("TextButton")
 
 --Properties:
 
-SandhurstExploitslol.Name = "SandhurstExploitslol"
-SandhurstExploitslol.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SandhurstExploitslol.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SandhurstExploits.Name = "SandhurstExploits"
+SandhurstExploits.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SandhurstExploits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Title.Name = "Title"
-Title.Parent = SandhurstExploitslol
+Title.Parent = SandhurstExploits
 Title.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
 Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.00584593136, 0, 0.00941909291, 0)
@@ -205,7 +205,7 @@ title.TextSize = 20.000
 
 -- Scripts:
 
-local function JUEFK_fake_script() -- Title.close 
+local function VQWYBSG_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -214,4 +214,206 @@ local function JUEFK_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(JUEFK_fake_script)()
+coroutine.wrap(VQWYBSG_fake_script)()
+local function KTDY_fake_script() -- SandhurstExploits.JJ 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
+		local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
+		local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
+	
+		local JJtype = "JJ" -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
+	
+		inverse_units = {
+			"VIGINTILLION ",     -- 10^63
+			"NOVEMDECILLION ",   -- 10^60
+			"OCTODECILLION ",    -- 10^57
+			"SEPTENDECILLION ",  -- 10^54
+			"SECDECILLION ",     -- 10^51
+			"QUINDECILLION ",    -- 10^48
+			"QUATTUORDECILLION ",-- 10^45
+			"TREDECILLION ",     -- 10^42
+			"DUODECILLION ",    -- 10^39
+			"UNDECILLION ",     -- 10^36
+			"DECILLION ",       -- 10^33
+			"NONILLION ",       -- 10^30
+			"OCTILLION ",       -- 10^27
+			"SEPTILLION ",      -- 10^24
+			"SEXTILLION ",      -- 10^21
+			"QUINTILLION ",     -- 10^18
+			"QUADRILLION ",     -- 10^15
+			"TRILLION ",        -- 10^12
+			"BILLION ",         -- 10^9
+			"MILLION ",         -- 10^6
+			"THOUSAND ",        -- 10^3
+		}
+		inverse_numbers = {
+			"ONE ",
+			"TWO ",
+			"THREE ",
+			"FOUR ",
+			"FIVE ",
+			"SIX ",
+			"SEVEN ",
+			"EIGHT ",
+			"NINE ",
+			"TEN ",
+			"ELEVEN ",
+			"TWELVE ",
+			"THIRTEEN ",
+			"FOURTEEN ",
+			"FIFTEEN ",
+			"SIXTEEN ",
+			"SEVENTEEN ",
+			"EIGHTEEN ",
+			"NINETEEN ",
+			"TWENTY ",
+			[30] = "THIRTY ",
+			[40] = "FORTY ",
+			[50] = "FIFTY ",
+			[60] = "SIXTY ",
+			[70] = "SEVENTY ",
+			[80] = "EIGHTY ",
+			[90] = "NINETY ",
+		}
+		phonetics = {
+			["A"] = "ALFA",
+			["B"] = "BRAVO",
+			["C"] = "CHARLIE",
+			["D"] = "DELTA",
+			["E"] = "ECHO",
+			["F"] = "FOXTROT",
+			["G"] = "GOLF",
+			["H"] = "HOTEL",
+			["I"] = "INDIA",
+			["J"] = "JULIETT",
+			["K"] = "KILO",
+			["L"] = "LIMA",
+			["M"] = "MIKE",
+			["N"] = "NOVEMBER",
+			["O"] = "OSCAR",
+			["P"] = "PAPA",
+			["Q"] = "QUEBEC",
+			["R"] = "ROMEO",
+			["S"] = "SIERRA",
+			["T"] = "TANGO",
+			["U"] = "UNIFORM",
+			["V"] = "VICTOR",
+			["W"] = "WHISKEY",
+			["X"] = "X-RAY",
+			["Y"] = "YANKEE",
+			["Z"] = "ZULU",
+		}
+	
+		function ConvertNumToWords(n)
+			local s = tostring(n)
+			local c = string.match (s, "%D")
+			if c then
+				return nil, "Non-numeric digit '" .. c .. "' in number"
+			end
+			if #s == 0 then
+				return nil, "No number supplied"
+			elseif #s > 66 then
+				return nil, "Number too big to convert to words"
+			end 
+			while #s % 3 > 0 do
+				s = "0" .. s
+			end 
+			local result = ""
+			local start = #inverse_units - (#s / 3) + 2
+	
+			for i = start, #inverse_units do
+				local group = tonumber(string.sub (s, 1, 3))
+				if group > 0 then
+					result = result .. ConvertTo999 (group) .. inverse_units [i]
+				end
+				s = string.sub(s, 4)    
+			end
+			result = result .. ConvertTo999(tonumber (s))
+			if result == "" then
+				result = "ZERO"
+			end
+			return (string.gsub(result, " +$", ""))
+		end
+	
+		function ConvertTo999(n)
+			if n <= 0 then
+				return ""
+			end
+	
+			local hundreds = math.floor(n / 100)
+			local tens = math.floor(n % 100)
+			local result = ""  
+	
+			if hundreds > 0 then
+				result = inverse_numbers[hundreds] .. "HUNDRED "
+				if tens == 0 then
+					return result
+				end 
+	
+				result = result .. "AND "
+	
+			end 
+	
+			if tens <= 20 then
+				return result .. inverse_numbers[tens] 
+			end
+	
+			result = result .. inverse_numbers[math.floor(tens / 10) * 10] 
+	
+			local digits = math.floor(n % 10)
+	
+			if digits > 0 then
+				result = result ..  inverse_numbers [digits]
+			end
+	
+			return result
+		end
+	
+		function sendChatMessage(msg)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg,"All")
+		end
+	
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+		if JJtype == "JJ" then
+			for i=1,AmountOfJJs do
+				sendChatMessage(ConvertNumToWords(i))
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		elseif JJtype == "HJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				for i=1,string.len(thisWord) do
+					sendChatMessage(string.sub(thisWord,i,i))
+					Humanoid.Jump = true
+					wait(TimeBetweenMessages)
+					if not Humanoid then return end
+				end
+				sendChatMessage(thisWord)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		elseif JJtype == "PJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				local ActualMessage = ""
+				for i=1,string.len(thisWord) do
+					if i > 1 then
+						ActualMessage = ActualMessage.. " "
+					end
+					local thisLetter = string.sub(thisWord,i,i)
+					local thisPhonetic = phonetics[thisLetter]
+					ActualMessage = ActualMessage.. thisPhonetic
+				end
+				sendChatMessage(ActualMessage)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		end
+	end)
+end
+coroutine.wrap(KTDY_fake_script)()
