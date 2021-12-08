@@ -33,12 +33,17 @@ local UICorner_5 = Instance.new("UICorner")
 local nameTXT_6 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local JJType = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
 local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
-local underline = Instance.new("Frame")
+local JJTime = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
 local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
-local title = Instance.new("TextButton")
+local underline = Instance.new("Frame")
 local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local title = Instance.new("TextButton")
 local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -51,7 +56,7 @@ Title.Name = "Title"
 Title.Parent = SandhurstExploits
 Title.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.00584593136, 0, 0.00941909291, 0)
+Title.Position = UDim2.new(0.747843921, 0, 0.0123645961, 0)
 Title.Size = UDim2.new(0.24248302, 0, 0.0368188508, 0)
 
 elements.Name = "elements"
@@ -59,7 +64,7 @@ elements.Parent = Title
 elements.BackgroundColor3 = Color3.fromRGB(34, 32, 34)
 elements.BorderSizePixel = 0
 elements.Position = UDim2.new(0, 0, 1.08000016, 0)
-elements.Size = UDim2.new(1, 0, 12.8641777, 0)
+elements.Size = UDim2.new(1, 0, 17.8641777, 0)
 
 nameTXT.Name = "nameTXT"
 nameTXT.Parent = elements
@@ -99,7 +104,7 @@ UIAspectRatioConstraint_2.AspectRatio = 5.189
 JJStart.Name = "JJStart"
 JJStart.Parent = elements
 JJStart.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-JJStart.Position = UDim2.new(0.243999943, 0, 0.34514451, 0)
+JJStart.Position = UDim2.new(0.247999936, 0, 0.580251873, 0)
 JJStart.Size = UDim2.new(0.499140143, 0, 0.0709365383, 0)
 JJStart.ZIndex = 2
 JJStart.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -131,7 +136,7 @@ nameTXT_3.Name = "nameTXT"
 nameTXT_3.Parent = elements
 nameTXT_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 nameTXT_3.BackgroundTransparency = 1.000
-nameTXT_3.Position = UDim2.new(0, 0, 0.491286784, 0)
+nameTXT_3.Position = UDim2.new(0, 0, 0.692807376, 0)
 nameTXT_3.Selectable = true
 nameTXT_3.Size = UDim2.new(1, 0, 0.116927594, 0)
 nameTXT_3.Font = Enum.Font.GothamSemibold
@@ -145,7 +150,7 @@ UIAspectRatioConstraint_5.AspectRatio = 6.648
 ST.Name = "ST"
 ST.Parent = elements
 ST.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-ST.Position = UDim2.new(0.0736621842, 0, 0.621881962, 0)
+ST.Position = UDim2.new(0.0736621842, 0, 0.809967875, 0)
 ST.Size = UDim2.new(0.389477879, 0, 0.0709365383, 0)
 ST.ZIndex = 2
 ST.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -176,7 +181,7 @@ UIAspectRatioConstraint_7.AspectRatio = 4.268
 PT.Name = "PT"
 PT.Parent = elements
 PT.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-PT.Position = UDim2.new(0.515999913, 0, 0.618772626, 0)
+PT.Position = UDim2.new(0.515999913, 0, 0.80685854, 0)
 PT.Size = UDim2.new(0.389477879, 0, 0.0709365383, 0)
 PT.ZIndex = 2
 PT.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -207,7 +212,7 @@ UIAspectRatioConstraint_9.AspectRatio = 4.268
 FORMALS.Name = "FORMALS"
 FORMALS.Parent = elements
 FORMALS.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-FORMALS.Position = UDim2.new(0.217662185, 0, 0.743148983, 0)
+FORMALS.Position = UDim2.new(0.217662185, 0, 0.895408988, 0)
 FORMALS.Size = UDim2.new(0.5614779, 0, 0.0709365383, 0)
 FORMALS.ZIndex = 2
 FORMALS.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -235,8 +240,45 @@ UIAspectRatioConstraint_10.AspectRatio = 6.153
 UIAspectRatioConstraint_11.Parent = FORMALS
 UIAspectRatioConstraint_11.AspectRatio = 6.153
 
-UIAspectRatioConstraint_12.Parent = elements
-UIAspectRatioConstraint_12.AspectRatio = 0.777
+JJType.Name = "JJType"
+JJType.Parent = elements
+JJType.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+JJType.BorderSizePixel = 0
+JJType.Position = UDim2.new(0.0480000004, 0, 0.293494403, 0)
+JJType.Size = UDim2.new(0.899999976, 0, 0.134839475, 0)
+JJType.Font = Enum.Font.SourceSans
+JJType.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
+JJType.PlaceholderText = "Type of JJ (HJ or JJ)"
+JJType.Text = ""
+JJType.TextColor3 = Color3.fromRGB(255, 255, 255)
+JJType.TextScaled = true
+JJType.TextSize = 14.000
+JJType.TextWrapped = true
+
+UICorner_6.Parent = JJType
+
+UIAspectRatioConstraint_12.Parent = JJType
+UIAspectRatioConstraint_12.AspectRatio = 5.189
+
+JJTime.Name = "JJTime"
+JJTime.Parent = elements
+JJTime.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+JJTime.BorderSizePixel = 0
+JJTime.Position = UDim2.new(0.0480000004, 0, 0.423363239, 0)
+JJTime.Size = UDim2.new(0.899999976, 0, 0.134839475, 0)
+JJTime.Font = Enum.Font.SourceSans
+JJTime.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
+JJTime.PlaceholderText = "Time between each jump         (in seconds)"
+JJTime.Text = ""
+JJTime.TextColor3 = Color3.fromRGB(255, 255, 255)
+JJTime.TextScaled = true
+JJTime.TextSize = 14.000
+JJTime.TextWrapped = true
+
+UICorner_7.Parent = JJTime
+
+UIAspectRatioConstraint_13.Parent = JJTime
+UIAspectRatioConstraint_13.AspectRatio = 5.189
 
 underline.Name = "underline"
 underline.Parent = Title
@@ -245,28 +287,29 @@ underline.BorderSizePixel = 0
 underline.Position = UDim2.new(0, 0, 1, 0)
 underline.Size = UDim2.new(1, 0, 0.0799999982, 0)
 
-UIAspectRatioConstraint_13.Parent = underline
-UIAspectRatioConstraint_13.AspectRatio = 125.000
+UIAspectRatioConstraint_14.Parent = underline
+UIAspectRatioConstraint_14.AspectRatio = 125.000
 
 title.Name = "title"
 title.Parent = Title
 title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0, 0, -1.49011612e-08, 0)
 title.Size = UDim2.new(1, 0, 1, 0)
 title.Font = Enum.Font.GothamBold
 title.Text = "SANDHURST EXPLOITS"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 20.000
 
-UIAspectRatioConstraint_14.Parent = title
-UIAspectRatioConstraint_14.AspectRatio = 10.000
-
-UIAspectRatioConstraint_15.Parent = Title
+UIAspectRatioConstraint_15.Parent = title
 UIAspectRatioConstraint_15.AspectRatio = 10.000
+
+UIAspectRatioConstraint_16.Parent = Title
+UIAspectRatioConstraint_16.AspectRatio = 10.000
 
 -- Scripts:
 
-local function TFME_fake_script() -- Title.close 
+local function XAKSUJJ_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -275,15 +318,14 @@ local function TFME_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(TFME_fake_script)()
-local function UVFLZP_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(XAKSUJJ_fake_script)()
+local function LMPDXSN_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
-		local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
-		local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
-	
-		local JJtype = "JJ" -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
+		local JJtype = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
+		local TypeOfJJ = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJType.Text
+		local TimeBetweenMessages = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJTime.Text -- must be at least 2.5 to avoid chat limiter
 	
 		inverse_units = {
 			"VIGINTILLION ",     -- 10^63
@@ -477,8 +519,8 @@ local function UVFLZP_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(UVFLZP_fake_script)()
-local function FODFZS_fake_script() -- SandhurstExploits.Uniform 
+coroutine.wrap(LMPDXSN_fake_script)()
+local function LDHYNG_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
@@ -511,10 +553,10 @@ local function FODFZS_fake_script() -- SandhurstExploits.Uniform
 		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
 	end)
 end
-coroutine.wrap(FODFZS_fake_script)()
-local function UFMYNJS_fake_script() -- SandhurstExploits.LocalScript 
+coroutine.wrap(LDHYNG_fake_script)()
+local function BFUC_fake_script() -- SandhurstExploits.LocalScript 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	
 end
-coroutine.wrap(UFMYNJS_fake_script)()
+coroutine.wrap(BFUC_fake_script)()
