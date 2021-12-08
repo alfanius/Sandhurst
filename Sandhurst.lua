@@ -51,7 +51,7 @@ Title.Name = "Title"
 Title.Parent = SandhurstExploits
 Title.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
 Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.743964195, 0, 0.043292433, 0)
+Title.Position = UDim2.new(0.744934142, 0, 0.0624382421, 0)
 Title.Size = UDim2.new(0.24248302, 0, 0.0368188508, 0)
 
 elements.Name = "elements"
@@ -252,7 +252,7 @@ title.Name = "title"
 title.Parent = Title
 title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(-0.0120000094, 0, 0, 0)
+title.Position = UDim2.new(-0.00399999972, 0, 0, 0)
 title.Size = UDim2.new(1, 0, 1, 0)
 title.Font = Enum.Font.GothamBold
 title.Text = "SANDHURST EXPLOITS"
@@ -267,7 +267,7 @@ UIAspectRatioConstraint_15.AspectRatio = 10.000
 
 -- Scripts:
 
-local function GUZOW_fake_script() -- Title.close 
+local function EEMHY_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -276,210 +276,210 @@ local function GUZOW_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(GUZOW_fake_script)()
-local function NOEFPWI_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(EEMHY_fake_script)()
+local function JRCW_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
-game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
-	local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
-	local TypeOfJJ = "JJ"
-	local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
-
-	local JJtype = TypeOfJJ -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
-
-	inverse_units = {
-		"VIGINTILLION ",     -- 10^63
-		"NOVEMDECILLION ",   -- 10^60
-		"OCTODECILLION ",    -- 10^57
-		"SEPTENDECILLION ",  -- 10^54
-		"SECDECILLION ",     -- 10^51
-		"QUINDECILLION ",    -- 10^48
-		"QUATTUORDECILLION ",-- 10^45
-		"TREDECILLION ",     -- 10^42
-		"DUODECILLION ",    -- 10^39
-		"UNDECILLION ",     -- 10^36
-		"DECILLION ",       -- 10^33
-		"NONILLION ",       -- 10^30
-		"OCTILLION ",       -- 10^27
-		"SEPTILLION ",      -- 10^24
-		"SEXTILLION ",      -- 10^21
-		"QUINTILLION ",     -- 10^18
-		"QUADRILLION ",     -- 10^15
-		"TRILLION ",        -- 10^12
-		"BILLION ",         -- 10^9
-		"MILLION ",         -- 10^6
-		"THOUSAND ",        -- 10^3
-	}
-	inverse_numbers = {
-		"ONE ",
-		"TWO ",
-		"THREE ",
-		"FOUR ",
-		"FIVE ",
-		"SIX ",
-		"SEVEN ",
-		"EIGHT ",
-		"NINE ",
-		"TEN ",
-		"ELEVEN ",
-		"TWELVE ",
-		"THIRTEEN ",
-		"FOURTEEN ",
-		"FIFTEEN ",
-		"SIXTEEN ",
-		"SEVENTEEN ",
-		"EIGHTEEN ",
-		"NINETEEN ",
-		"TWENTY ",
-		[30] = "THIRTY ",
-		[40] = "FORTY ",
-		[50] = "FIFTY ",
-		[60] = "SIXTY ",
-		[70] = "SEVENTY ",
-		[80] = "EIGHTY ",
-		[90] = "NINETY ",
-	}
-	phonetics = {
-		["A"] = "ALFA",
-		["B"] = "BRAVO",
-		["C"] = "CHARLIE",
-		["D"] = "DELTA",
-		["E"] = "ECHO",
-		["F"] = "FOXTROT",
-		["G"] = "GOLF",
-		["H"] = "HOTEL",
-		["I"] = "INDIA",
-		["J"] = "JULIETT",
-		["K"] = "KILO",
-		["L"] = "LIMA",
-		["M"] = "MIKE",
-		["N"] = "NOVEMBER",
-		["O"] = "OSCAR",
-		["P"] = "PAPA",
-		["Q"] = "QUEBEC",
-		["R"] = "ROMEO",
-		["S"] = "SIERRA",
-		["T"] = "TANGO",
-		["U"] = "UNIFORM",
-		["V"] = "VICTOR",
-		["W"] = "WHISKEY",
-		["X"] = "X-RAY",
-		["Y"] = "YANKEE",
-		["Z"] = "ZULU",
-	}
-
-	function ConvertNumToWords(n)
-		local s = tostring(n)
-		local c = string.match (s, "%D")
-		if c then
-			return nil, "Non-numeric digit '" .. c .. "' in number"
-		end
-		if #s == 0 then
-			return nil, "No number supplied"
-		elseif #s > 66 then
-			return nil, "Number too big to convert to words"
-		end 
-		while #s % 3 > 0 do
-			s = "0" .. s
-		end 
-		local result = ""
-		local start = #inverse_units - (#s / 3) + 2
-
-		for i = start, #inverse_units do
-			local group = tonumber(string.sub (s, 1, 3))
-			if group > 0 then
-				result = result .. ConvertTo999 (group) .. inverse_units [i]
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
+		local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
+		local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
+	
+		local JJtype = "JJ" -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
+	
+		inverse_units = {
+			"VIGINTILLION ",     -- 10^63
+			"NOVEMDECILLION ",   -- 10^60
+			"OCTODECILLION ",    -- 10^57
+			"SEPTENDECILLION ",  -- 10^54
+			"SECDECILLION ",     -- 10^51
+			"QUINDECILLION ",    -- 10^48
+			"QUATTUORDECILLION ",-- 10^45
+			"TREDECILLION ",     -- 10^42
+			"DUODECILLION ",    -- 10^39
+			"UNDECILLION ",     -- 10^36
+			"DECILLION ",       -- 10^33
+			"NONILLION ",       -- 10^30
+			"OCTILLION ",       -- 10^27
+			"SEPTILLION ",      -- 10^24
+			"SEXTILLION ",      -- 10^21
+			"QUINTILLION ",     -- 10^18
+			"QUADRILLION ",     -- 10^15
+			"TRILLION ",        -- 10^12
+			"BILLION ",         -- 10^9
+			"MILLION ",         -- 10^6
+			"THOUSAND ",        -- 10^3
+		}
+		inverse_numbers = {
+			"ONE ",
+			"TWO ",
+			"THREE ",
+			"FOUR ",
+			"FIVE ",
+			"SIX ",
+			"SEVEN ",
+			"EIGHT ",
+			"NINE ",
+			"TEN ",
+			"ELEVEN ",
+			"TWELVE ",
+			"THIRTEEN ",
+			"FOURTEEN ",
+			"FIFTEEN ",
+			"SIXTEEN ",
+			"SEVENTEEN ",
+			"EIGHTEEN ",
+			"NINETEEN ",
+			"TWENTY ",
+			[30] = "THIRTY ",
+			[40] = "FORTY ",
+			[50] = "FIFTY ",
+			[60] = "SIXTY ",
+			[70] = "SEVENTY ",
+			[80] = "EIGHTY ",
+			[90] = "NINETY ",
+		}
+		phonetics = {
+			["A"] = "ALFA",
+			["B"] = "BRAVO",
+			["C"] = "CHARLIE",
+			["D"] = "DELTA",
+			["E"] = "ECHO",
+			["F"] = "FOXTROT",
+			["G"] = "GOLF",
+			["H"] = "HOTEL",
+			["I"] = "INDIA",
+			["J"] = "JULIETT",
+			["K"] = "KILO",
+			["L"] = "LIMA",
+			["M"] = "MIKE",
+			["N"] = "NOVEMBER",
+			["O"] = "OSCAR",
+			["P"] = "PAPA",
+			["Q"] = "QUEBEC",
+			["R"] = "ROMEO",
+			["S"] = "SIERRA",
+			["T"] = "TANGO",
+			["U"] = "UNIFORM",
+			["V"] = "VICTOR",
+			["W"] = "WHISKEY",
+			["X"] = "X-RAY",
+			["Y"] = "YANKEE",
+			["Z"] = "ZULU",
+		}
+	
+		function ConvertNumToWords(n)
+			local s = tostring(n)
+			local c = string.match (s, "%D")
+			if c then
+				return nil, "Non-numeric digit '" .. c .. "' in number"
 			end
-			s = string.sub(s, 4)    
-		end
-		result = result .. ConvertTo999(tonumber (s))
-		if result == "" then
-			result = "ZERO"
-		end
-		return (string.gsub(result, " +$", ""))
-	end
-
-	function ConvertTo999(n)
-		if n <= 0 then
-			return ""
-		end
-
-		local hundreds = math.floor(n / 100)
-		local tens = math.floor(n % 100)
-		local result = ""  
-
-		if hundreds > 0 then
-			result = inverse_numbers[hundreds] .. "HUNDRED "
-			if tens == 0 then
-				return result
+			if #s == 0 then
+				return nil, "No number supplied"
+			elseif #s > 66 then
+				return nil, "Number too big to convert to words"
 			end 
-
-			result = result .. "AND "
-
-		end 
-
-		if tens <= 20 then
-			return result .. inverse_numbers[tens] 
+			while #s % 3 > 0 do
+				s = "0" .. s
+			end 
+			local result = ""
+			local start = #inverse_units - (#s / 3) + 2
+	
+			for i = start, #inverse_units do
+				local group = tonumber(string.sub (s, 1, 3))
+				if group > 0 then
+					result = result .. ConvertTo999 (group) .. inverse_units [i]
+				end
+				s = string.sub(s, 4)    
+			end
+			result = result .. ConvertTo999(tonumber (s))
+			if result == "" then
+				result = "ZERO"
+			end
+			return (string.gsub(result, " +$", ""))
 		end
-
-		result = result .. inverse_numbers[math.floor(tens / 10) * 10] 
-
-		local digits = math.floor(n % 10)
-
-		if digits > 0 then
-			result = result ..  inverse_numbers [digits]
+	
+		function ConvertTo999(n)
+			if n <= 0 then
+				return ""
+			end
+	
+			local hundreds = math.floor(n / 100)
+			local tens = math.floor(n % 100)
+			local result = ""  
+	
+			if hundreds > 0 then
+				result = inverse_numbers[hundreds] .. "HUNDRED "
+				if tens == 0 then
+					return result
+				end 
+	
+				result = result .. "AND "
+	
+			end 
+	
+			if tens <= 20 then
+				return result .. inverse_numbers[tens] 
+			end
+	
+			result = result .. inverse_numbers[math.floor(tens / 10) * 10] 
+	
+			local digits = math.floor(n % 10)
+	
+			if digits > 0 then
+				result = result ..  inverse_numbers [digits]
+			end
+	
+			return result
 		end
-
-		return result
-	end
-
-	function sendChatMessage(msg)
-		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg,"All")
-	end
-
-	local Humanoid = game.Players.LocalPlayer.Character.Humanoid
-	if JJtype == "JJ" then
-		for i=1,AmountOfJJs do
-			sendChatMessage(ConvertNumToWords(i))
-			Humanoid.Jump = true
-			wait(TimeBetweenMessages)
-			if not Humanoid then return end
+	
+		function sendChatMessage(msg)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg,"All")
 		end
-	elseif JJtype == "HJ" then
-		for i=1,AmountOfJJs do
-			local thisWord = ConvertNumToWords(i)
-			for i=1,string.len(thisWord) do
-				sendChatMessage(string.sub(thisWord,i,i))
+	
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+		if JJtype == "JJ" then
+			for i=1,AmountOfJJs do
+				sendChatMessage(ConvertNumToWords(i))
 				Humanoid.Jump = true
 				wait(TimeBetweenMessages)
 				if not Humanoid then return end
 			end
-			sendChatMessage(thisWord)
-			Humanoid.Jump = true
-			wait(TimeBetweenMessages)
-			if not Humanoid then return end
-		end
-	elseif JJtype == "PJ" then
-		for i=1,AmountOfJJs do
-			local thisWord = ConvertNumToWords(i)
-			local ActualMessage = ""
-			for i=1,string.len(thisWord) do
-				if i > 1 then
-					ActualMessage = ActualMessage.. " "
+		elseif JJtype == "HJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				for i=1,string.len(thisWord) do
+					sendChatMessage(string.sub(thisWord,i,i))
+					Humanoid.Jump = true
+					wait(TimeBetweenMessages)
+					if not Humanoid then return end
 				end
-				local thisLetter = string.sub(thisWord,i,i)
-				local thisPhonetic = phonetics[thisLetter]
-				ActualMessage = ActualMessage.. thisPhonetic
+				sendChatMessage(thisWord)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
 			end
-			sendChatMessage(ActualMessage)
-			Humanoid.Jump = true
-			wait(TimeBetweenMessages)
-			if not Humanoid then return end
+		elseif JJtype == "PJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				local ActualMessage = ""
+				for i=1,string.len(thisWord) do
+					if i > 1 then
+						ActualMessage = ActualMessage.. " "
+					end
+					local thisLetter = string.sub(thisWord,i,i)
+					local thisPhonetic = phonetics[thisLetter]
+					ActualMessage = ActualMessage.. thisPhonetic
+				end
+				sendChatMessage(ActualMessage)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
 		end
-	end
-end)
-coroutine.wrap(NOEFPWI_fake_script)()
-local function VAWV_fake_script() -- SandhurstExploits.Uniform 
+	end)
+end
+coroutine.wrap(JRCW_fake_script)()
+local function KECC_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
@@ -512,10 +512,10 @@ local function VAWV_fake_script() -- SandhurstExploits.Uniform
 		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
 	end)
 end
-coroutine.wrap(VAWV_fake_script)()
-local function HDMEYEC_fake_script() -- SandhurstExploits.LocalScript 
+coroutine.wrap(KECC_fake_script)()
+local function QBGX_fake_script() -- SandhurstExploits.LocalScript 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	
 end
-coroutine.wrap(HDMEYEC_fake_script)()
+coroutine.wrap(QBGX_fake_script)()
