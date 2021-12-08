@@ -268,7 +268,7 @@ JJTime.Position = UDim2.new(0.0480000004, 0, 0.423363239, 0)
 JJTime.Size = UDim2.new(0.899999976, 0, 0.134839475, 0)
 JJTime.Font = Enum.Font.SourceSans
 JJTime.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
-JJTime.PlaceholderText = "Time between each jump         (in seconds)"
+JJTime.PlaceholderText = "COMING SOON"
 JJTime.Text = ""
 JJTime.TextColor3 = Color3.fromRGB(255, 255, 255)
 JJTime.TextScaled = true
@@ -309,7 +309,7 @@ UIAspectRatioConstraint_16.AspectRatio = 10.000
 
 -- Scripts:
 
-local function XAKSUJJ_fake_script() -- Title.close 
+local function XCFMGSC_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -318,8 +318,8 @@ local function XAKSUJJ_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(XAKSUJJ_fake_script)()
-local function LMPDXSN_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(XCFMGSC_fake_script)()
+local function RVZS_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
@@ -519,8 +519,8 @@ local function LMPDXSN_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(LMPDXSN_fake_script)()
-local function LDHYNG_fake_script() -- SandhurstExploits.Uniform 
+coroutine.wrap(RVZS_fake_script)()
+local function ZEFDZI_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
@@ -553,10 +553,10 @@ local function LDHYNG_fake_script() -- SandhurstExploits.Uniform
 		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
 	end)
 end
-coroutine.wrap(LDHYNG_fake_script)()
-local function BFUC_fake_script() -- SandhurstExploits.LocalScript 
+coroutine.wrap(ZEFDZI_fake_script)()
+local function JKFZXLF_fake_script() -- SandhurstExploits.LocalScript 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	
 end
-coroutine.wrap(BFUC_fake_script)()
+coroutine.wrap(JKFZXLF_fake_script)()
