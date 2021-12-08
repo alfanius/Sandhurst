@@ -267,7 +267,7 @@ UIAspectRatioConstraint_15.AspectRatio = 10.000
 
 -- Scripts:
 
-local function ABHVRV_fake_script() -- Title.close 
+local function GUZOW_fake_script() -- Title.close 
 	local script = Instance.new('LocalScript', Title)
 
 	local close = script.Parent.title
@@ -276,14 +276,16 @@ local function ABHVRV_fake_script() -- Title.close
 		script.Parent.elements.Visible = not script.Parent.elements.Visible
 	end)
 end
-coroutine.wrap(ABHVRV_fake_script)()
-local function YXJVILK_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(GUZOW_fake_script)()
+local function NOEFPWI_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
-		local JJtype = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
+		local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
 		local TypeOfJJ = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJType.Text
-		local TimeBetweenMessages = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJTime.Text -- must be at least 2.5 to avoid chat limiter
+		local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
+	
+		local JJtype = TypeOfJJ -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
 	
 		inverse_units = {
 			"VIGINTILLION ",     -- 10^63
@@ -477,8 +479,8 @@ local function YXJVILK_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(YXJVILK_fake_script)()
-local function DTICQMQ_fake_script() -- SandhurstExploits.Uniform 
+coroutine.wrap(NOEFPWI_fake_script)()
+local function VAWV_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
@@ -511,10 +513,10 @@ local function DTICQMQ_fake_script() -- SandhurstExploits.Uniform
 		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
 	end)
 end
-coroutine.wrap(DTICQMQ_fake_script)()
-local function ZXKDVUD_fake_script() -- SandhurstExploits.LocalScript 
+coroutine.wrap(VAWV_fake_script)()
+local function HDMEYEC_fake_script() -- SandhurstExploits.LocalScript 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	
 end
-coroutine.wrap(ZXKDVUD_fake_script)()
+coroutine.wrap(HDMEYEC_fake_script)()
